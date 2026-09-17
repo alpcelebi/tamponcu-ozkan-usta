@@ -226,7 +226,7 @@ export default function PlastikKaynak({ onOpenQuote }) {
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={onOpenQuote}
-            className="px-5 py-3 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-xs transition hover:scale-105"
+            className="px-5 py-3 rounded-xl bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 hover:from-sky-300 hover:via-cyan-200 hover:to-sky-300 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-xs transition hover:scale-105"
           >
             Fiyat Teklifi Al
           </button>

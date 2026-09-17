@@ -30,23 +30,23 @@ const metrics = [
 export default function MetricsBar() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8 relative z-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
         {metrics.map((item, idx) => (
           <div
             key={idx}
-            className="p-6 rounded-3xl bg-white/95 dark:bg-[#111827]/95 backdrop-blur-xl border border-slate-200/90 dark:border-slate-800 shadow-lg hover:shadow-xl hover:border-amber-400/50 dark:hover:border-amber-500/40 transition-all duration-300 flex items-start gap-4 group"
+            className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-white/90 dark:bg-[#101726]/90 backdrop-blur-xl border border-slate-200/80 dark:border-white/5 shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-white/15 transition-all duration-200 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 group"
           >
-            <div className="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-500/10 border border-amber-200/80 dark:border-amber-500/20 shrink-0 group-hover:scale-110 transition-transform">
+            <div className="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200/60 dark:border-white/10 shrink-0 group-hover:scale-105 transition-transform">
               {item.icon}
             </div>
-            <div className="space-y-1">
-              <div className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight font-display">
+            <div className="space-y-0.5">
+              <div className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight font-display">
                 {item.value}
               </div>
-              <div className="text-sm font-bold text-slate-800 dark:text-slate-200">
+              <div className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200">
                 {item.label}
               </div>
-              <div className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              <div className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block leading-snug">
                 {item.desc}
               </div>
             </div>

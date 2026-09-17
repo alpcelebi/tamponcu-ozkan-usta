@@ -213,25 +213,25 @@ export default function Home({ onOpenQuote }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Col: Hero Pitch */}
             <div className="lg:col-span-7 space-y-6">
-              {/* Badge Pill */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/25 text-amber-800 dark:text-amber-300 text-xs font-bold uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                <span>15+ Yıllık Usta Tecrübesi • Mersin Otoyol Otomotiv</span>
+              {/* Minimalist Badge Pill */}
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 dark:bg-slate-800/80 border border-slate-200/80 dark:border-white/10 text-slate-700 dark:text-slate-300 text-xs font-semibold shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                <span>Mersin Otoyol Otomotiv • 15+ Yıllık Usta Tecrübesi</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.1]">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.12]">
                 TAMPONCU <span className="text-amber-500">ÖZKAN</span> USTA
               </h1>
 
               <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
-                Mersin'de araç kaporta, tampon onarımı, plastik kaynak ve fırın boyada usta el işçiliği. Hasarlı parçalarınızı değiştirmeden, orijinal kalitesinde onararak %70'e varan tasarruf sağlayın.
+                Mersin'de araç kaporta, tampon onarımı, plastik kaynak ve fırın boyada garantili usta el işçiliği. Hasarlı parçalarınızı değiştirmeden orijinal formunda onararak %70 tasarruf sağlayın.
               </p>
 
-              {/* Action Buttons (Minimalist Ice-Blue & Sleek Layout) */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+              {/* Action Buttons (Minimalist, Balanced & Responsive) */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
                 <button
                   onClick={onOpenQuote}
-                  className="px-5 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 hover:from-sky-300 hover:via-cyan-200 hover:to-sky-300 text-slate-950 font-bold text-sm tracking-wide shadow-[0_2px_20px_rgba(56,189,248,0.35)] hover:shadow-[0_4px_28px_rgba(56,189,248,0.55)] border border-sky-100/90 transition-all duration-200 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
+                  className="px-5 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 hover:from-sky-300 hover:via-cyan-200 hover:to-sky-300 text-slate-950 font-bold text-sm tracking-wide shadow-[0_2px_18px_rgba(56,189,248,0.35)] hover:shadow-[0_4px_24px_rgba(56,189,248,0.5)] border border-sky-100/90 transition-all duration-200 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
                 >
                   <Sparkles className="w-4 h-4 text-slate-950" />
                   <span>Hızlı Fiyat Teklifi Al</span>
@@ -241,7 +241,7 @@ export default function Home({ onOpenQuote }) {
                   href="https://wa.me/905323533063?text=Merhaba%20Özkan%20Usta,%20aracımın%20hasar%20fotoğrafını%20iletiyorum.%20Fiyat%20öğrenebilir%20miyim?"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-3.5 rounded-xl bg-gradient-to-r from-[#25D366] to-[#1ebe5b] hover:from-[#20ba59] hover:to-[#17a34e] text-white font-bold text-sm tracking-wide shadow-[0_4px_20px_rgba(37,211,102,0.3)] hover:shadow-[0_6px_25px_rgba(37,211,102,0.45)] transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 border border-emerald-400/30"
+                  className="px-5 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm tracking-wide shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>WhatsApp ile Hasar Gönder</span>
@@ -249,46 +249,29 @@ export default function Home({ onOpenQuote }) {
 
                 <a
                   href="tel:+905323533063"
-                  className="px-5 py-3.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-bold text-sm border border-slate-200 dark:border-slate-700 shadow-xs transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
+                  className="px-5 py-3.5 rounded-xl bg-white dark:bg-slate-800/90 hover:bg-slate-100 dark:hover:bg-slate-700/90 text-slate-800 dark:text-slate-100 font-bold text-sm border border-slate-200 dark:border-slate-700 shadow-xs transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
                 >
                   <Phone className="w-4 h-4 text-amber-500" />
                   <span>0532 353 30 63</span>
                 </a>
               </div>
 
-              {/* Craftsmanship Guarantee Card */}
-              <div className="p-3 sm:p-4 rounded-2xl bg-white/80 dark:bg-slate-900/80 border border-amber-500/30 dark:border-amber-500/25 backdrop-blur-md shadow-xs flex items-center gap-3.5">
-                <img
-                  src="/img/craftsmanship_seal.jpg"
-                  alt="Usta İşçilik Garantisi"
-                  className="w-12 h-12 rounded-full border border-amber-400/50 shadow-sm shrink-0 object-cover"
-                />
-                <div className="text-xs space-y-0.5">
-                  <div className="font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
-                    <span>%100 Usta El İşçiliği & Orijinal Parça Garantisi</span>
-                  </div>
-                  <p className="text-slate-600 dark:text-slate-400 text-[11px] leading-snug">
-                    Yan sanayi takmak yerine aracınızın fabrikasyon parçalarını koruyarak orijinal mukavemetinde onarıyoruz.
-                  </p>
-                </div>
-              </div>
-
-              {/* Trust Badges */}
-              <div className="pt-2 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-slate-700 dark:text-slate-300 font-semibold">
+              {/* Minimalist Unified Trust Strip */}
+              <div className="pt-4 border-t border-slate-200/60 dark:border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-slate-600 dark:text-slate-400 font-medium">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
                   <span>Ustalık Garantisi</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
                   <span>Aynı Gün Teslim</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
-                  <span>%70 Parça Tasarrufu</span>
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span>%70 Tasarruf</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
                   <span>Birebir Renk Uyumu</span>
                 </div>
               </div>
@@ -492,10 +475,10 @@ export default function Home({ onOpenQuote }) {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
                   activeTab === tab.key
-                    ? 'bg-amber-400 dark:bg-amber-500 text-slate-950 shadow-xs'
-                    : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700'
+                    ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-bold shadow-xs'
+                    : 'bg-white dark:bg-slate-800/90 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10 hover:bg-slate-100 dark:hover:bg-slate-700'
                 }`}
               >
                 {tab.label}

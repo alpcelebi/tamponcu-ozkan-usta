@@ -114,35 +114,37 @@ export default function BeforeAfterSlider({
           />
         </div>
 
-        {/* Before / After Badges (Responsive sizing for mobile screens) */}
-        <div className="absolute top-2.5 left-2.5 sm:top-3.5 sm:left-3.5 z-10 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-red-600/90 text-white text-[10px] sm:text-xs font-black tracking-wider uppercase backdrop-blur-md shadow-md pointer-events-none select-none">
-          {beforeLabel}
+        {/* Before / After Badges (Minimalist Frosted Pills) */}
+        <div className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-slate-950/80 text-white text-[10px] sm:text-[11px] font-semibold tracking-wide backdrop-blur-md border border-white/15 shadow-sm pointer-events-none select-none">
+          <span className="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0" />
+          <span>{beforeLabel}</span>
         </div>
-        <div className="absolute top-2.5 right-2.5 sm:top-3.5 sm:right-3.5 z-10 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-emerald-600/90 text-white text-[10px] sm:text-xs font-black tracking-wider uppercase backdrop-blur-md shadow-md pointer-events-none select-none">
-          {afterLabel}
+        <div className="absolute top-3 right-3 z-10 inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-slate-950/80 text-white text-[10px] sm:text-[11px] font-semibold tracking-wide backdrop-blur-md border border-white/15 shadow-sm pointer-events-none select-none">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+          <span>{afterLabel}</span>
         </div>
 
-        {/* Interactive Divider Line with Glowing Amber Accent */}
+        {/* Minimalist Interactive Divider Line */}
         <div
-          className="absolute top-0 bottom-0 z-20 w-1 bg-gradient-to-b from-amber-300 via-amber-400 to-amber-500 shadow-[0_0_14px_rgba(245,158,11,0.85)] pointer-events-none"
+          className="absolute top-0 bottom-0 z-20 w-[2px] bg-white/90 shadow-[0_0_10px_rgba(0,0,0,0.5)] pointer-events-none"
           style={{ left: `${sliderPos}%` }}
         >
           {/* Tactile Grab Handle */}
           <div
-            className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-amber-400 border-2 border-white dark:border-slate-950 text-slate-950 flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.4)] cursor-grab active:cursor-grabbing hover:scale-110 active:scale-95 transition-transform pointer-events-auto ring-4 ring-amber-400/25"
+            className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white text-slate-900 flex items-center justify-center shadow-[0_2px_12px_rgba(0,0,0,0.35)] cursor-grab active:cursor-grabbing hover:scale-105 active:scale-95 transition-transform pointer-events-auto ring-2 ring-amber-400/40 border border-slate-200/80"
           >
-            <ChevronsLeftRight className="w-4 h-4 sm:w-5 sm:h-5 text-slate-950 stroke-[2.5]" />
+            <ChevronsLeftRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-900 stroke-[2.5]" />
           </div>
         </div>
       </div>
 
       {/* Caption & Mobile Helper Hint */}
-      <div className="mt-2.5 sm:mt-3 flex flex-col sm:flex-row sm:items-center justify-between w-full text-xs text-slate-500 dark:text-slate-400 px-1 gap-1">
-        <span className="font-bold text-slate-800 dark:text-slate-200 text-xs sm:text-sm flex items-center gap-1.5">
-          <span className="text-amber-500">⚡</span> {title}
+      <div className="mt-2.5 flex flex-col sm:flex-row sm:items-center justify-between w-full text-xs text-slate-500 dark:text-slate-400 px-1 gap-1">
+        <span className="font-semibold text-slate-800 dark:text-slate-200 text-xs sm:text-sm">
+          {title}
         </span>
-        <span className="text-[11px] sm:text-xs text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1">
-          <span>👈 Kaydırarak Değişimi İnceleyin 👉</span>
+        <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium flex items-center gap-1">
+          <span>‹ Ortadaki çizgiyi kaydırarak karşılaştırın ›</span>
         </span>
       </div>
     </div>

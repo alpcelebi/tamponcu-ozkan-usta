@@ -110,10 +110,10 @@ export default function YedekParca({ onOpenQuote }) {
             <button
               key={brand}
               onClick={() => setSelectedBrand(brand)}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
                 selectedBrand === brand
-                  ? 'bg-amber-400 dark:bg-amber-500 text-slate-950 shadow-xs'
-                  : 'bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700'
+                  ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-bold shadow-xs'
+                  : 'bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10 hover:bg-slate-100 dark:hover:bg-slate-700'
               }`}
             >
               {brand}
@@ -172,7 +172,7 @@ export default function YedekParca({ onOpenQuote }) {
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={onOpenQuote}
-            className="px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-xs transition hover:scale-105"
+            className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 hover:from-sky-300 hover:via-cyan-200 hover:to-sky-300 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-xs transition hover:scale-105"
           >
             Talep Formu Aç
           </button>

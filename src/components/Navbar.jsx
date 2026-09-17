@@ -89,21 +89,21 @@ export default function Navbar({ onOpenQuote }) {
             )}
           </button>
 
-          {/* Teklif Al Button (High-Contrast Vivid Gradient CTA) */}
+          {/* Teklif Al Button (Minimalist Ice-Blue Accent) */}
           <button
             onClick={onOpenQuote}
-            className="px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-300 hover:to-amber-500 text-slate-950 border border-amber-300 shadow-[0_2px_14px_rgba(245,158,11,0.4)] hover:shadow-[0_4px_18px_rgba(245,158,11,0.6)] transition-all flex items-center gap-1.5 hover:scale-105 active:scale-95"
+            className="px-3.5 py-2 rounded-xl text-xs font-bold bg-sky-500/10 hover:bg-sky-400 text-sky-700 dark:text-sky-300 hover:text-slate-950 border border-sky-400/30 hover:border-sky-400 shadow-xs transition-all flex items-center gap-1.5 hover:scale-105 active:scale-95"
           >
-            <Sparkles className="w-4 h-4 text-slate-950" />
+            <Sparkles className="w-3.5 h-3.5" />
             <span>Teklif Al</span>
           </button>
 
-          {/* Phone Call Button */}
+          {/* Phone Call Button (Minimalist & Sleek) */}
           <a
             href="tel:+905323533063"
-            className="px-4 py-2.5 rounded-xl text-sm font-display font-black tracking-wide bg-slate-900 dark:bg-white text-white dark:text-slate-950 hover:bg-slate-800 dark:hover:bg-slate-100 border border-slate-700 dark:border-slate-200 shadow-sm transition-all flex items-center gap-2 hover:scale-105 active:scale-95"
+            className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 dark:bg-slate-800 text-white hover:bg-slate-800 dark:hover:bg-slate-700 border border-slate-700/80 dark:border-white/10 shadow-xs transition-all flex items-center gap-2 hover:scale-105 active:scale-95"
           >
-            <Phone className="w-4 h-4 text-amber-500" />
+            <Phone className="w-3.5 h-3.5 text-amber-400" />
             <span>0532 353 30 63</span>
           </a>
         </div>
@@ -157,22 +157,22 @@ export default function Navbar({ onOpenQuote }) {
               })}
 
               {/* Mobile Quick Action Buttons */}
-              <div className="pt-4 grid grid-cols-2 gap-2.5 border-t border-slate-100 dark:border-slate-800 mt-3">
+              <div className="pt-4 grid grid-cols-2 gap-2.5 border-t border-slate-100 dark:border-white/10 mt-3">
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false)
                     onOpenQuote()
                   }}
-                  className="py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-500/10 text-amber-900 dark:text-amber-300 border border-amber-200 dark:border-amber-500/30 text-center flex items-center justify-center gap-1.5 shadow-xs"
+                  className="py-3 px-3 rounded-xl text-xs font-bold bg-sky-400 hover:bg-sky-300 text-slate-950 text-center flex items-center justify-center gap-1.5 shadow-xs transition"
                 >
-                  <Sparkles className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                  <Sparkles className="w-4 h-4 text-slate-950" />
                   <span>Teklif Al</span>
                 </button>
                 <a
                   href="tel:+905323533063"
-                  className="py-3 px-3 rounded-xl text-xs font-black uppercase tracking-wider bg-amber-400 hover:bg-amber-500 text-slate-950 text-center flex items-center justify-center gap-1.5 shadow-xs"
+                  className="py-3 px-3 rounded-xl text-xs font-bold bg-slate-900 dark:bg-slate-800 text-white text-center flex items-center justify-center gap-1.5 shadow-xs border border-slate-800 dark:border-white/10"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 text-amber-400" />
                   <span>0532 353 30 63</span>
                 </a>
               </div>
