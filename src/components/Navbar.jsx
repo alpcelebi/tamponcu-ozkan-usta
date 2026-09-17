@@ -89,21 +89,21 @@ export default function Navbar({ onOpenQuote }) {
             )}
           </button>
 
-          {/* Teklif Al Button (Secondary CTA with subtle border & glow) */}
+          {/* Teklif Al Button (High-Contrast Vivid Gradient CTA) */}
           <button
             onClick={onOpenQuote}
-            className="px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-amber-500/10 hover:bg-amber-500/20 text-amber-900 dark:text-amber-300 border border-amber-500/30 hover:border-amber-500/50 shadow-xs transition-all flex items-center gap-1.5 hover:scale-105 active:scale-95"
+            className="px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-300 hover:to-amber-500 text-slate-950 border border-amber-300 shadow-[0_2px_14px_rgba(245,158,11,0.4)] hover:shadow-[0_4px_18px_rgba(245,158,11,0.6)] transition-all flex items-center gap-1.5 hover:scale-105 active:scale-95"
           >
-            <Sparkles className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+            <Sparkles className="w-4 h-4 text-slate-950" />
             <span>Teklif Al</span>
           </button>
 
-          {/* Phone Call Button (Primary High-Contrast CTA) */}
+          {/* Phone Call Button */}
           <a
             href="tel:+905323533063"
-            className="px-4 py-2.5 rounded-xl text-sm font-display font-black tracking-wide bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 shadow-sm hover:shadow-md hover:shadow-amber-500/20 transition-all flex items-center gap-2 hover:scale-105 active:scale-95"
+            className="px-4 py-2.5 rounded-xl text-sm font-display font-black tracking-wide bg-slate-900 dark:bg-white text-white dark:text-slate-950 hover:bg-slate-800 dark:hover:bg-slate-100 border border-slate-700 dark:border-slate-200 shadow-sm transition-all flex items-center gap-2 hover:scale-105 active:scale-95"
           >
-            <Phone className="w-4 h-4" />
+            <Phone className="w-4 h-4 text-amber-500" />
             <span>0532 353 30 63</span>
           </a>
         </div>

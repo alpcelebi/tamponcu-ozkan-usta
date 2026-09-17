@@ -6,6 +6,7 @@ const projects = [
   {
     id: 'chery',
     tabTitle: 'Chery Tampon',
+    mobileTitle: 'Chery',
     carModel: 'Chery Tiggo 8 Pro',
     service: 'Ön Tampon & Kaporta Restorasyonu',
     damage: 'Ağır Tampon Kırığı & Çizikler',
@@ -17,6 +18,7 @@ const projects = [
   {
     id: 'golf',
     tabTitle: 'VW Golf Kaynak',
+    mobileTitle: 'VW Golf',
     carModel: 'Volkswagen Golf 7',
     service: 'Plastik Tampon Kaynağı & Dolgu',
     damage: 'Tampon Çatlağı & Tırnak Kırığı',
@@ -28,6 +30,7 @@ const projects = [
   {
     id: 'mercedes',
     tabTitle: 'Mercedes Tampon',
+    mobileTitle: 'Mercedes',
     carModel: 'Mercedes-Benz C-Serisi',
     service: 'Tampon Onarım & Panel Hizalama',
     damage: 'Ön Izgara Çevresi Kırığı',
@@ -43,24 +46,25 @@ export default function HeroShowcase() {
   const current = projects[activeTab]
 
   return (
-    <div className="rounded-3xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-xl overflow-hidden transition-all">
+    <div className="rounded-2xl sm:rounded-3xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-xl overflow-hidden transition-all">
       {/* Project Selector Tabs */}
-      <div className="p-2 sm:p-2.5 bg-slate-50 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between gap-1.5">
-        <div className="flex items-center gap-1.5 w-full">
+      <div className="p-1.5 sm:p-2 bg-slate-50 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between gap-1 sm:gap-1.5">
+        <div className="flex items-center gap-1 sm:gap-1.5 w-full">
           {projects.map((proj, idx) => {
             const isActive = activeTab === idx
             return (
               <button
                 key={proj.id}
                 onClick={() => setActiveTab(idx)}
-                className={`flex-1 py-2 px-2.5 sm:px-3.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
+                className={`flex-1 py-1.5 sm:py-2 px-2 sm:px-3.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 ${
                   isActive
-                    ? 'bg-amber-400 text-slate-950 shadow-xs'
+                    ? 'bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 text-slate-950 font-black shadow-sm ring-1 ring-amber-400/40'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800'
                 }`}
               >
                 <Car className="w-3.5 h-3.5 shrink-0" />
-                <span className="truncate">{proj.tabTitle}</span>
+                <span className="truncate sm:hidden">{proj.mobileTitle}</span>
+                <span className="truncate hidden sm:inline">{proj.tabTitle}</span>
               </button>
             )
           })}
@@ -68,7 +72,7 @@ export default function HeroShowcase() {
       </div>
 
       {/* Main Interactive Slider Showcase */}
-      <div className="p-3 sm:p-4">
+      <div className="p-2 sm:p-4">
         <BeforeAfterSlider
           key={current.id}
           beforeImage={current.beforeImage}
@@ -80,12 +84,12 @@ export default function HeroShowcase() {
       </div>
 
       {/* Project Info Footer */}
-      <div className="px-4 py-3 bg-slate-50/90 dark:bg-slate-900/60 border-t border-slate-200 dark:border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+      <div className="px-3 sm:px-4 py-2.5 sm:py-3 bg-slate-50/90 dark:bg-slate-900/60 border-t border-slate-200 dark:border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
         <div className="space-y-0.5">
-          <div className="font-extrabold text-slate-900 dark:text-white flex items-center gap-1.5">
+          <div className="font-extrabold text-slate-900 dark:text-white flex items-center gap-1.5 text-xs sm:text-sm">
             <span>{current.carModel}</span>
             <span className="text-amber-500">•</span>
-            <span className="text-slate-500 dark:text-slate-400 font-normal">{current.service}</span>
+            <span className="text-slate-500 dark:text-slate-400 font-normal text-[11px] sm:text-xs">{current.service}</span>
           </div>
           <div className="text-[11px] text-slate-600 dark:text-slate-400">
             <span className="text-amber-600 dark:text-amber-400 font-semibold">{current.damage}</span> → {current.result}
