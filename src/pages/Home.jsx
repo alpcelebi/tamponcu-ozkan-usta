@@ -227,11 +227,11 @@ export default function Home({ onOpenQuote }) {
                 Mersin'de araç kaporta, tampon onarımı, plastik kaynak ve fırın boyada usta el işçiliği. Hasarlı parçalarınızı değiştirmeden, orijinal kalitesinde onararak %70'e varan tasarruf sağlayın.
               </p>
 
-              {/* Action Buttons with High-Impact Automotive Styling */}
+              {/* Action Buttons (Minimalist Ice-Blue & Sleek Layout) */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
                 <button
                   onClick={onOpenQuote}
-                  className="px-6 py-4 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-300 hover:via-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm uppercase tracking-wider shadow-[0_4px_22px_rgba(245,158,11,0.45)] hover:shadow-[0_6px_28px_rgba(245,158,11,0.6)] border border-amber-300/70 ring-2 ring-amber-400/20 transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
+                  className="px-5 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 hover:from-sky-300 hover:via-cyan-200 hover:to-sky-300 text-slate-950 font-bold text-sm tracking-wide shadow-[0_2px_20px_rgba(56,189,248,0.35)] hover:shadow-[0_4px_28px_rgba(56,189,248,0.55)] border border-sky-100/90 transition-all duration-200 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
                 >
                   <Sparkles className="w-4 h-4 text-slate-950" />
                   <span>Hızlı Fiyat Teklifi Al</span>
@@ -241,7 +241,7 @@ export default function Home({ onOpenQuote }) {
                   href="https://wa.me/905323533063?text=Merhaba%20Özkan%20Usta,%20aracımın%20hasar%20fotoğrafını%20iletiyorum.%20Fiyat%20öğrenebilir%20miyim?"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-4 rounded-2xl bg-gradient-to-r from-[#25D366] to-[#1ebe5b] hover:from-[#20ba59] hover:to-[#17a34e] text-white font-bold text-sm tracking-wide shadow-[0_4px_20px_rgba(37,211,102,0.35)] hover:shadow-[0_6px_25px_rgba(37,211,102,0.5)] transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 border border-emerald-400/40"
+                  className="px-5 py-3.5 rounded-xl bg-gradient-to-r from-[#25D366] to-[#1ebe5b] hover:from-[#20ba59] hover:to-[#17a34e] text-white font-bold text-sm tracking-wide shadow-[0_4px_20px_rgba(37,211,102,0.3)] hover:shadow-[0_6px_25px_rgba(37,211,102,0.45)] transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 border border-emerald-400/30"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>WhatsApp ile Hasar Gönder</span>
@@ -249,7 +249,7 @@ export default function Home({ onOpenQuote }) {
 
                 <a
                   href="tel:+905323533063"
-                  className="px-5 py-4 rounded-2xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-bold text-sm border-2 border-amber-400/60 dark:border-amber-500/40 shadow-xs transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
+                  className="px-5 py-3.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-bold text-sm border border-slate-200 dark:border-slate-700 shadow-xs transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95"
                 >
                   <Phone className="w-4 h-4 text-amber-500" />
                   <span>0532 353 30 63</span>
